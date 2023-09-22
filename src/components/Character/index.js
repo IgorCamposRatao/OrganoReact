@@ -1,9 +1,12 @@
 import './Character.css'
 
-const Character = ({name, clas, image}) => {
+const Character = ({ name, clas, image, backgroundColor }) => {
+
+
+
     return (
-        <div className='character' >
-            <div className='header'>
+        <div className='character'>
+            <div className='header' style={{ backgroundColor: backgroundColor }}>
                 <img src={image} alt={name} />
             </div>
             <div className='footer'>

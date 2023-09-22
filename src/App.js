@@ -32,8 +32,7 @@ function App() {
   const [characters, setCharacters] = useState([])
 
   const newCharacterSave = (character) => {
-    console.log(character)
-    setCharacters([...characters, character])
+        setCharacters([...characters, character])
   }
 
   return (

@@ -9,6 +9,8 @@ const Role = (props) => {
             <h3 style={{ borderColor: props.primaryColor }} >{props.nome}</h3>
             <div className='characters'>
             {props.characters.map(character => <Character 
+            backgroundColor={props.primaryColor }
+            key={character.name}
             name={character.name} 
             clas={character.clas} 
             image={character.image}/> )}
